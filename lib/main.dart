@@ -6,7 +6,6 @@ import 'home_page/page.dart';
 
 void main() async {
 //init the hive
-  // Hive.deleteBoxFromDisk("myBox");
   Hive.registerAdapter(TaskAdapter());
   await Hive.initFlutter();
   await Hive.openBox("myBox");
